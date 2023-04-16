@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #FFAFBD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  width: 500px;
+  height: 740px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  justify-content: center; /* значение auto для свойства margin говорит браузеру использовать равномерные отступы слева и справа */
+  border: 2px solid #333;
+  box-shadow: 5px 5px 10px #888;
+}
+dd {
+  background-image: url('./IMG/фон.jpg');
+  background-size: contain;
+  background-size: 500px;
+  width: 496px;
+  height: 736px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  top: 0px;
+  justify-content: center;
+  border: 2px solid #333;
+  box-shadow: 5px 5px 10px #888;
+}
+
+.header {
+  background: #4568DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  height: 50px;
+  width: 450px;
+  left: 20px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  top: -1px;
+  color: white;
+  padding: 10px;
+}
+nav {
+  background-color: rgb(9, 9, 124); 
+  display: flex;
+  width: 420px;
+  position: relative;
+  left: 40px;
+  border-radius: 20px;
+  justify-content: space-around;
+  height: 50px;
+  margin-top: 600px;
+  border-top: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* измененное значение тени */
+  opacity: 0.9; /* увеличенное значение прозрачности */
+}
+nav button i {
+  font-size: 25px;
+  color: #333;
+}
+
+nav button:active i {
+  color: #fff;
+}
+
+
+.custom-btn {
+  width: 130px;
+  height: 46px;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  font-size: 15px;
+}
+
+.btn-2 {
+  background: #6190E8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-2:hover {
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+nav .custom-btn:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+nav .custom-btn:last-child {
+  width: 110px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#home {
+  display: block;
+}
+
+#rating,
+#shop,
+#profile {
+  display: none;
+}
+.header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.header-line {
+  height: 570px;
+  width: 485px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 10px;
+  position: relative;
+  right: 50px;
+}
+
+
+.container {
+  width: 485px;
+  align-items: center;
+  margin: 0 auto;
+  top: -500px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  align-items: center;
+  top: -100px;
+
+}
+h2{
+  color: #fff;
+}
+#content-1.show,
+#content-2.show,
+#content-3.show,
+#content-4.show {
+  display: block;
+}
+
+.buy-btn {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+h1{
+  position: relative;
+  top: -5px;
+}
+
+.profile {
+  background: #f7ff00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #db36a4, #f7ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  padding: 20px;
+  width: 452px;
+  border-radius: 20px;
+  height: 150px;
+  position: relative;
+  left: 15px;
+  top: -50px;
+  display: flex;
+  align-items: center;
+}
+h3{
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 20px;
+  color: #52eba3;
+  border-radius: 5px;
+  position: relative;
+  top: 50px;
+  right: 137px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-check-circle {
+  color: blue;
+  margin-left: 5px;
+}
+
+
+.balance {
+  margin-top: 5px;
+  background: #FF4E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: auto;
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  top: 40px;
+  right: 140px;
+}
+.avatar {
+  justify-content: center;
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  top: -24px;
+  left: 70px;
+  margin: 30px auto;
+  border: 3px solid #00C853;
+  background: #FFF;
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  box-shadow: 15px 15px 50px rgba(208,255,0,255);
+  animation: anim-ramka-4 10s infinite;
+  font-size: 24px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+@keyframes anim-ramka-4 {
+  0% {
+      border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+      box-shadow: 15px 15px 50px rgba(208,255,0,255);
+  }
+  25% {
+      border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+  }
+  50% {
+      border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+      box-shadow: -10px -5px 50px rgba(208,255,0,255);
+  }
+  75% {
+      border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+  }
+}
+
+
+
+.ref {
+  background: #ee0979;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  padding: 20px;
+  width: 452px;
+  border-radius: 20px;
+  height: 200px;
+  position: relative;
+  left: 15px;
+  top: -20px;
+  display: flex;
+  align-items: center;
+}
+h13{
+  background: #FF5F6D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 30px;
+  width: 550px;
+  text-align: center;
+  position: relative;
+  top: -65px;
+  right: 1px;
+}
+.referal{
+  background: #EECDA3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 230px;
+  border-radius: 10px;
+  color: #FFF;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  left: 35px;
+  top: -150px;
+}
+.ssilka{
+  background: #EECDA3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 265px;
+  border-radius: 5px;
+  height: 25px;
+  text-align: left;
+  font-size: 20px;
+  position: relative;
+  left: 35px;
+  top: -130px;
+  color: #ffffff;
+}
+h14{
+  position: relative;
+  left: 7px;
+}
+#copy-button {
+  background: #f7ff00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #db36a4, #f7ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  top: 10px;
+  border: 1px solid #ccc;
+  color: #FFF;
+  left: 120px;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: lighter;
+  padding: 8px 12px;
+  transition: background-color 0.1s ease;
+}
+
+#copy-button:hover {
+  background-color: #ff6a6a;
+}
