@@ -295,7 +295,7 @@ h3{
   padding: 20px;
   width: 452px;
   border-radius: 20px;
-  height: 200px;
+  height: 240px;
   position: relative;
   left: 15px;
   top: -20px;
@@ -312,7 +312,7 @@ h13{
   width: 550px;
   text-align: center;
   position: relative;
-  top: -65px;
+  top: -85px;
   right: 1px;
 }
 .referal{
@@ -329,33 +329,45 @@ h13{
   left: 35px;
   top: -150px;
 }
-.ssilka{
-  background: #EECDA3;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width: 265px;
+.ssilka {
+  background: #EECDA3;
+  background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);
+  background: linear-gradient(to right, #EF629F, #EECDA3);
+  width: auto;
   border-radius: 5px;
-  height: 25px;
+  height: auto;
   text-align: left;
   font-size: 20px;
   position: relative;
   left: 35px;
   top: -130px;
   color: #ffffff;
+  display: inline-block;
+  padding: 10px;
 }
-h14{
+
+.ssilka span.text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+h14 {
   position: relative;
   left: 7px;
 }
+
 #copy-button {
   background: #f7ff00;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #db36a4, #f7ff00);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #db36a4, #f7ff00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   position: relative;
-  top: 10px;
+  top: -120px;
   border: 1px solid #ccc;
   color: #FFF;
-  left: 120px;
+  left: 150px;
   border-radius: 4px;
   color: #333;
   cursor: pointer;
